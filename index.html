@@ -3,117 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Summer & Justice</title>
-
-  <!-- Cursive & thin font -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+  <title>SUMMER & JUSTICE</title>
 
   <style>
     body {
       margin: 0;
-      background-color: #000000; /* slate grey/black */
-      color: #f0ebeb; /* off-white text */
-      font-family: 'Dancing Script', cursive;
-      font-weight: 300;
-      letter-spacing: 0.05em;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-weight: 300; /* thin */
+      letter-spacing: 0.1em;
       text-align: center;
     }
 
-    header {
-      padding: 100px 20px;
-      background-color: #11181d; /* darker black */
-    }
-
-    header h1 {
-      font-size: 3.5em;
-      margin: 0;
-      font-weight: 300;
-    }
-
-    header p {
-      margin-top: 15px;
-      font-size: 1.3em;
-      font-weight: 300;
-      color: #b0b0b0;
-    }
-
-    .divider {
-      width: 60px;
-      height: 1px;
-      background-color: #f0f0f0;
+    .container {
+      border: 2px solid black;
+      max-width: 900px;
       margin: 40px auto;
-      opacity: 0.3;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 70px 20px;
-    }
-
-    section h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 200;
-      font-size: 2.1em;
-      color: #ddd;
-      margin-bottom: 30px;
-      letter-spacing: 0.1em;
-    }
-
-    section p {
-      font-family: 'Dancing Script', cursive;
+    h1 {
+      margin: 0 0 20px;
       font-weight: 300;
-      font-size: 1.2em;
-      line-height: 1.6;
-      color: #ccc;
-      margin: 0 auto;
-      max-width: 600px;
+      font-size: 3em;
+      text-transform: uppercase;
     }
 
-    footer {
-      padding: 40px 20px;
-      background-color: #11181d;
-      color: #888;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 200;
-      font-size: 1.1em;
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav button {
+      background: none;
+      border: 1px solid black;
+      margin: 0 6px;
+      padding: 10px 18px;
+      font-size: 1em;
+      font-weight: 300;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .photo-wrapper {
+      position: relative;
+      width: 250px;
+      height: 160px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
+      user-select: none;
       letter-spacing: 0.2em;
+    }
+
+    @media (max-width: 600px) {
+      .photos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo-wrapper {
+        width: 90%;
+        height: 180px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Summer & Justice</h1>
-    <div class="divider"></div>
-    <p>are joyfully celebrating their engagement</p>
-  </header>
+  <div class="container">
+    <h1>SUMMER & JUSTICE</h1>
 
-  <section>
-    <h2>Our Beginning</h2>
-    <p>
-      A love built on friendship, laughter, and quiet moments —  
-      we are so grateful for the journey that led us here  
-      and for the love that surrounds us.
-    </p>
-  </section>
+    <nav>
+      <button>Home</button>
+      <button>Schedule</button>
+      <button>Dress Code</button>
+      <button>Registry</button>
+      <button>FAQs</button>
+      <button>RSVP</button>
+    </nav>
 
-  <section>
-    <h2>Wedding Details</h2>
-    <p>December 1, 2026</p>
-    <p>Formal celebration to follow</p>
-    <p>Location details coming soon</p>
-  </section>
-
-  <section>
-    <h2>With Love</h2>
-    <p>
-      Thank you for sharing in this special chapter with us.  
-      We cannot wait to celebrate together.
-    </p>
-  </section>
-
-  <footer>
-    12/01/2026
-  </footer>
+    <div class="photos">
+      <div class="photo-wrapper">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Photo 1" />
+        <div class="photo-overlay">S &amp; J</div>
+      </div>
+      <div class="photo-wrapper">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="Photo 2" />
+        <div class="photo-overlay">S &amp; J</div>
+      </div>
+      <div class="photo-wrapper">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Photo 3" />
+        <div class="photo-overlay">S &amp; J</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
