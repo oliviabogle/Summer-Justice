@@ -2,131 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SUMMER & JUSTICE</title>
-
-  <style>
-    body {
-      margin: 0;
-      background-color: #ffffff;
-      color: #000000;
-      font-family: Arial, sans-serif;
-      font-weight: 300; /* thin */
-      letter-spacing: 0.1em;
-      text-align: center;
-    }
-
-    .container {
-      border: 2px solid black;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    h1 {
-      margin: 0 0 20px;
-      font-weight: 300;
-      font-size: 3em;
-      text-transform: uppercase;
-    }
-
-    nav {
-      margin-bottom: 30px;
-    }
-
-    nav button {
-      background: none;
-      border: 1px solid black;
-      margin: 0 6px;
-      padding: 10px 18px;
-      font-size: 1em;
-      font-weight: 300;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    nav button:hover {
-      background-color: black;
-      color: white;
-    }
-
-    .photos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .photo-wrapper {
-      position: relative;
-      width: 250px;
-      height: 160px;
-      overflow: hidden;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .photo-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .photo-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2.5em;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      pointer-events: none;
-      user-select: none;
-      letter-spacing: 0.2em;
-    }
-
-    @media (max-width: 600px) {
-      .photos {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .photo-wrapper {
-        width: 90%;
-        height: 180px;
-      }
-    }
-  </style>
+  <title>Summer & Justice</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>SUMMER & JUSTICE</h1>
 
-    <nav>
-      <button>Home</button>
-      <button>Schedule</button>
-      <button>Dress Code</button>
-      <button>Registry</button>
-      <button>FAQs</button>
-      <button>RSVP</button>
-    </nav>
+<header class="nav">
+  <div class="logo">Summer & Justice</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#dresscode">Dress Code</a>
+    <a href="#travel">Travel</a>
+    <a href="#registry">Registry</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+</header>
 
-    <div class="photos">
-      <div class="photo-wrapper">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Photo 1" />
-        <div class="photo-overlay">S &amp; J</div>
-      </div>
-      <div class="photo-wrapper">
-        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="Photo 2" />
-        <div class="photo-overlay">S &amp; J</div>
-      </div>
-      <div class="photo-wrapper">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Photo 3" />
-        <div class="photo-overlay">S &amp; J</div>
-      </div>
-    </div>
+<section class="hero" id="home">
+  <div class="hero-image">
+    <!-- Replace hero.jpg with their engagement photo -->
+    <img src="hero.jpg" alt="Summer and Justice Engagement">
+    <div class="monogram">S & J</div>
   </div>
+</section>
+
+<section class="intro">
+  <h1>Summer & Justice</h1>
+  <p>are getting married</p>
+</section>
+
+<section id="schedule" class="section">
+  <h2>Schedule</h2>
+  <p>Ceremony — 4:30 PM<br>Reception — 6:00 PM</p>
+</section>
+
+<section id="dresscode" class="section">
+  <h2>Dress Code</h2>
+  <p>Formal / Black Tie Optional</p>
+</section>
+
+<section id="travel" class="section">
+  <h2>Travel & Accommodations</h2>
+  <p>Hotel blocks and airport info coming soon.</p>
+</section>
+
+<section id="registry" class="section">
+  <h2>Registry</h2>
+  <p>Registry links will be added soon.</p>
+</section>
+
+<section id="rsvp" class="section">
+  <h2>RSVP</h2>
+  <p>Online RSVP coming soon.</p>
+</section>
+
+<footer>
+  <p>With love, Summer & Justice 🤍</p>
+</footer>
+
 </body>
 </html>
